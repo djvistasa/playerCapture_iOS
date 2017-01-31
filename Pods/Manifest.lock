@@ -1,0 +1,35 @@
+PODS:
+  - ReactiveCocoa (5.0.0-rc.1):
+    - ReactiveSwift (~> 1.0.0-rc.3)
+  - ReactiveSwift (1.0.0):
+    - Result (~> 3.1)
+  - Result (3.1.0)
+  - Siesta (1.0.1):
+    - Siesta/Core (= 1.0.1)
+  - Siesta/Core (1.0.1)
+  - SwiftyJSON (3.1.4)
+
+DEPENDENCIES:
+  - ReactiveCocoa (= 5.0.0-rc.1)
+  - Siesta (>= 1.0.1)
+  - SwiftyJSON (from `https://github.com/SwiftyJSON/SwiftyJSON.git`)
+
+EXTERNAL SOURCES:
+  SwiftyJSON:
+    :git: https://github.com/SwiftyJSON/SwiftyJSON.git
+
+CHECKOUT OPTIONS:
+  SwiftyJSON:
+    :commit: adf34cfb4c9f2ff4e3c420c6d9fb1e2eaf3b3791
+    :git: https://github.com/SwiftyJSON/SwiftyJSON.git
+
+SPEC CHECKSUMS:
+  ReactiveCocoa: 3e9cad4b77fa199d41e03f603cb55d0701ad6ad8
+  ReactiveSwift: f391724ee318a2cfd3e37dfb041cd49ecf4e7869
+  Result: 4e3ed5995ed94d0cd6a09be9a431fce3f3624bbf
+  Siesta: c7195fc65376360c76a27ce7bb64e0f1ce099a20
+  SwiftyJSON: 05cf0e98a950e2ba343735264f5a96b81e755d00
+
+PODFILE CHECKSUM: 309e559c129c7951a2375b12dda06ff5de899f28
+
+COCOAPODS: 1.1.1
