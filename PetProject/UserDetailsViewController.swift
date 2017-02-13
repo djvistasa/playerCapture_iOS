@@ -13,8 +13,8 @@ import SwiftyJSON
 
 class UserDetailsViewController: UIViewController {
 
-    var userIndex:Int!
-    var userArray: JSON = []
+    var playerIndex:Int!
+    var playerArray: JSON = []
     
     @IBOutlet weak var userImage: UIImageView!
     @IBOutlet weak var userName: UILabel!
@@ -26,8 +26,8 @@ class UserDetailsViewController: UIViewController {
         //print(userArray[userIndex])
         //print(userIndex)
         
-        for user in userArray["users"] {
-            if Int(user.0) == userIndex {
+        for user in playerArray["players"] {
+            if Int(user.0) == playerIndex {
                 print(user.1)
                 
                 if let checkedUrl = URL(string: String(describing: user.1["avatar"])) {

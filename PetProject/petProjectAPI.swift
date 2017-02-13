@@ -24,13 +24,10 @@ class _PetApi : Service {
             $0.pipeline[.parsing].add(SwiftyJSONTransformer, contentTypes: ["*/json"])
         }
         
-        //self.configureTransformer("/login/*") {
-        //    ($0.content as JSON)["results"].arrayValue
-        //}
+        configureTransformer("get_players") {
+            ($0.content as JSON)["players"].arrayValue.map(Player.init)
+        }
     }
     
 }
 
-private let SwiftyJSONTransformer =
-    ResponseContentTransformer
-        { JSON($0.content as AnyObject) }

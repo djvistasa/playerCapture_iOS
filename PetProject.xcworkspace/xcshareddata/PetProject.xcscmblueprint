@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "BC51F3080F9C32BA50FC1D5BBEEF8293B7987438",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "92E85996E304BB16F6F65928E7DE0CA5DA01D0D9" : 9223372036854775807,
+    "BC51F3080F9C32BA50FC1D5BBEEF8293B7987438" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "B841F42E-B410-428E-BB31-AC9208FA3826",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "92E85996E304BB16F6F65928E7DE0CA5DA01D0D9" : "",
+    "BC51F3080F9C32BA50FC1D5BBEEF8293B7987438" : "playerCapture_Ios\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "PetProject",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "PetProject.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:Nona-Creative\/OrderIniPhoneApp.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "92E85996E304BB16F6F65928E7DE0CA5DA01D0D9"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:djvistasa\/playerCapture_iOS.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "BC51F3080F9C32BA50FC1D5BBEEF8293B7987438"
+    }
+  ]
+}

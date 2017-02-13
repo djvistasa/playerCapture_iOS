@@ -45,6 +45,30 @@ class CreatePalyer : UIViewController {
             heightValidated
         {
          // name valid
+            
+            createPlayerResource.request(.post, json: [
+                "name": playerName.text,
+                "surname": playerSurname.text,
+                "age": playerAge.text,
+                "sport": playerSport.text,
+                "team": playerTeam.text,
+                "position": playerPosition.text,
+                "weight": playerWeight.text,
+                "height": playerHeight.text
+                ]).onSuccess({ data in
+                    var responseContent = data.content as! JSON
+                    
+                    if responseContent["success"] == 1 {
+                        self.performSegue(withIdentifier: "HomePage", sender: self)
+                    } else {
+                        // self.errorLabel.alpha = 1.0
+                    }
+                    
+                    print(responseContent["success"])
+                }).onFailure({data in
+                    //self.errorLabel.alpha = 1.0
+                    
+                })
         }
     }
     override func viewDidLoad() {
