@@ -22,6 +22,7 @@
 		C2AF915A1E40ED350065E710 /* validateTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2AF91591E40ED350065E710 /* validateTextField.swift */; };
 		C2B96CF71E37922F0061937B /* petProjectAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2B96CF61E37922F0061937B /* petProjectAPI.swift */; };
 		C2B96CFB1E38E0E30061937B /* UserDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2B96CFA1E38E0E30061937B /* UserDetailsViewController.swift */; };
+		C2DCE2741E51B555007662A2 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2DCE2731E51B555007662A2 /* Player.swift */; };
 		FB8C15D81BBAF50A79F50759 /* Pods_PetProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 428BB805AB6EDCA91E74E4AD /* Pods_PetProject.framework */; };
 /* End PBXBuildFile section */
 
@@ -71,6 +72,7 @@
 		C2AF91591E40ED350065E710 /* validateTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = validateTextField.swift; sourceTree = "<group>"; };
 		C2B96CF61E37922F0061937B /* petProjectAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = petProjectAPI.swift; sourceTree = "<group>"; };
 		C2B96CFA1E38E0E30061937B /* UserDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDetailsViewController.swift; sourceTree = "<group>"; };
+		C2DCE2731E51B555007662A2 /* Player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -205,6 +207,7 @@
 		C2B96CF81E38E09D0061937B /* API */ = {
 			isa = PBXGroup;
 			children = (
+				C2DCE2721E51B500007662A2 /* Models */,
 				C2B96CF61E37922F0061937B /* petProjectAPI.swift */,
 			);
 			name = API;
@@ -216,6 +219,14 @@
 				C2B96CFA1E38E0E30061937B /* UserDetailsViewController.swift */,
 			);
 			name = "User Details";
+			sourceTree = "<group>";
+		};
+		C2DCE2721E51B500007662A2 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C2DCE2731E51B555007662A2 /* Player.swift */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 		E3FFF60FBB3F9068AE9EAEE5 /* Pods */ = {
@@ -519,6 +530,7 @@
 				C2B96CF71E37922F0061937B /* petProjectAPI.swift in Sources */,
 				C2AF915A1E40ED350065E710 /* validateTextField.swift in Sources */,
 				C21E00B91E262489006E86E5 /* AppDelegate.swift in Sources */,
+				C2DCE2741E51B555007662A2 /* Player.swift in Sources */,
 				C2644FF91E27757A00FFAF2A /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

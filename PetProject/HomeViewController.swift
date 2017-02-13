@@ -13,15 +13,15 @@ import SwiftyJSON
 
 class HomeViewController: UITableViewController {
     
-    var userArray = [String]()
-    var fullUserArray:JSON = []
+    var playerArray = [Player]()
+    var fullPlayerArray:JSON = []
     var rowInt:Int = 0
-    let createPlayerResource = petAPI.resource("/create_player")
+    let getPlayers = petAPI.resource("/get_players")
     var clearTable:Bool = false
     
     
     @IBAction func createPlayer(_ sender: Any) {
-        performSegue(withIdentifier: "createPlayer", sender: self)
+           performSegue(withIdentifier: "createPlayer", sender: self)
     }
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,7 +36,18 @@ class HomeViewController: UITableViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         self.clearTable = true
-        
+        getPlayers.request(.get).onSuccess({ data in
+            let responseContent = data.content as! [Player]
+            
+            self.playerArray.removeAll()
+
+            self.playerArray = responseContent
+            self.tableView.reloadData()
+            
+        }).onFailure({data in
+            
+            
+        })
     }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -45,14 +56,14 @@ class HomeViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
        
-        return userArray.count
+        return playerArray.count
 
 
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "customcell", for: indexPath)
-        cell.textLabel?.text = userArray[indexPath.item]
+        //cell.textLabel?.text = playerArray[indexPath.item]
         return cell
     }
     
@@ -68,8 +79,8 @@ class HomeViewController: UITableViewController {
         if (segue.identifier == "userDetails") {
             let destinationController = segue.destination as! UserDetailsViewController;
             
-            destinationController.userIndex = rowInt
-            destinationController.userArray = fullUserArray
+            destinationController.playerIndex = rowInt
+            destinationController.playerArray = fullPlayerArray
             
         }
     }
